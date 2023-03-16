@@ -39,7 +39,7 @@
 
     <style>
       :root {
-        --base-color: #ffc600;
+        --base: #ffc600;
         --spacing: 10px;
         --blur: 10px;
       }
@@ -65,16 +65,35 @@
 
       /* USING CSS VARIABLES */
       img {
-        background: var(--base-color);
+        background: var(--base);
         padding: var(--spacing);
         filter: blur(var(--blur));
       }
 
       .hl {
-        color: var(--base-color);
+        color: var(--base);
       }
     </style>
 
-    <script></script>
+    <script>
+      // VARIABLES
+      const allInputs = document.querySelectorAll("input");
+      const img = document.querySelector("img");
+      const highlightedWord = document.querySelector(".hl");
+
+      // FUNCTION
+      function changeCSSVal(e) {
+        const newVal = `${e.target.value}${
+          e.target.dataset.sizing ? e.target.dataset.sizing : ""
+        }`;
+        img.style.setProperty(`--${e.target.name}`, newVal);
+        highlightedWord.style.setProperty(`--${e.target.name}`, newVal);
+      }
+
+      // EVENT LISTENER
+      allInputs.forEach(input => {
+        input.addEventListener("input", changeCSSVal);
+      });
+    </script>
   </body>
 </html>

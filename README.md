@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/126619528/225781858-aeaa8d9a-3a91-4499
 
 ### Status
 
-🛠️ Working on deploying
+✅ Completed & Deployed
 
 ### Built with
 

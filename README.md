@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/126619528/225781858-aeaa8d9a-3a91-4499
 
 ### Demo Link
 
-**[💻 Live Site URL]()**
+**[💻 Live Site URL](https://soojeong-park-ca.github.io/play-with-css/)**
 
 ## About the Project
 

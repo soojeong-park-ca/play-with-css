@@ -19,9 +19,7 @@ Play with CSS is a website where you can change the CSS styles(spacing, blur, co
 
 Demo video:
 
-Screenshot:
-
-![JS + CSS Clock](./play-with-css-screenshot.png)
+https://user-images.githubusercontent.com/126619528/225781858-aeaa8d9a-3a91-4499-966a-dabad2ae57e3.mov
 
 ### Demo Link
 

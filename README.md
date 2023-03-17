@@ -45,17 +45,22 @@ Some features to highlight in this project are:
 
 - using `CSS custom properties` to define the CSS styles on the `:root` so that they can be reused or manipulated in the global scope throughout the whole HTML document.
 
-- using `element.style.setPropery()` method to add inline styles to the selected elements and setting new values to the CSS custom properties.
-
   ```css
+  :root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+  }
+  ```
+
+- using `element.style.setPropery()` method to add inline styles to the selected element and setting new values to the CSS custom properties.
+
+  ```js
   function changeCSSVal(e) {
     const newVal = `${e.target.value}${
-      e.target.dataset.sizing ?
-      e.target.dataset.sizing :
-      ""
+      e.target.dataset.sizing ? e.target.dataset.sizing : ""
     }`;
-    img.style.setProperty(`--${e.target.name}`, newVal);
-    highlightedWord.style.setProperty(`--${e.target.name}`, newVal);
+    document.documentElement.style.setProperty(`--${e.target.name}`, newVal);
   }
   ```
 

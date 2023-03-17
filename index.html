@@ -77,17 +77,17 @@
 
     <script>
       // VARIABLES
-      const allInputs = document.querySelectorAll("input");
-      const img = document.querySelector("img");
-      const highlightedWord = document.querySelector(".hl");
+      const allInputs = document.querySelectorAll(".controls input");
 
       // FUNCTION
       function changeCSSVal(e) {
         const newVal = `${e.target.value}${
           e.target.dataset.sizing ? e.target.dataset.sizing : ""
         }`;
-        img.style.setProperty(`--${e.target.name}`, newVal);
-        highlightedWord.style.setProperty(`--${e.target.name}`, newVal);
+        document.documentElement.style.setProperty(
+          `--${e.target.name}`,
+          newVal
+        );
       }
 
       // EVENT LISTENER
